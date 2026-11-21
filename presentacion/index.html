@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Analítica predictiva para la compra de energía y la resiliencia energética en el Cauca</title>
+  <meta name="description" content="Sustentación académica: analítica predictiva, compra de energía y resiliencia energética en el Cauca. Resultados separados por estado de evidencia." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1525'/%3E%3Cpath d='M36 8 20 36h12l-4 20 18-30H34l2-18z' fill='%232dd4bf'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/presentacion.css" />
+</head>
+<body data-deck="main">
+  <a class="skip-link" href="#stage">Saltar a la diapositiva</a>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M13.5 2 5 14h6l-1.5 8L18 10h-6l1.5-8Z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-text">
+          <strong>Energía &amp; Clima</strong>
+          <span>Proyecto Integrador</span>
+        </span>
+      </div>
+
+      <span class="topbar-sep" aria-hidden="true"></span>
+      <span class="deck-name" id="deckName">Presentación principal</span>
+
+      <nav class="top-actions" aria-label="Controles de la presentación">
+        <button class="btn" id="btnIndex" type="button" title="Índice de diapositivas (I)" aria-label="Abrir índice de diapositivas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <span class="btn-label">Índice</span>
+        </button>
+        <a class="btn btn--accent" id="deckLink" href="anexos.html" title="Abrir anexos técnicos A–G">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 5h9v14H4zM13 5h7v9"/><path d="M16 11l4-4-4-4"/></svg>
+          <span class="btn-label">Anexos A–G</span>
+        </a>
+        <button class="btn" id="btnFull" type="button" title="Pantalla completa (F)" aria-label="Entrar en pantalla completa" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg>
+          <span class="btn-label">Pantalla</span>
+        </button>
+        <button class="btn" id="btnPrint" type="button" title="Imprimir una diapositiva por página (P)" aria-label="Imprimir presentación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2"/><path d="M6 14h12v7H6z"/></svg>
+          <span class="btn-label">Imprimir</span>
+        </button>
+      </nav>
+    </header>
+
+    <div class="main-area">
+      <main class="stage-wrap" aria-label="Área de diapositiva">
+        <div class="stage-shell" id="stageShell">
+          <div class="stage" id="stage" tabindex="-1" role="region" aria-label="Diapositiva de la presentación"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="bottombar">
+      <div class="progress-wrap">
+        <span class="progress-label" id="progressLabel">0 %</span>
+        <div class="progress-track" id="progressTrack" role="progressbar" aria-label="Progreso de la presentación" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" title="Clic para saltar a una diapositiva">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-btn" id="btnPrev" type="button" aria-label="Diapositiva anterior" title="Anterior (←)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <span class="counter" id="counter" aria-live="polite" aria-atomic="true"><strong>01</strong> / 16</span>
+        <button class="nav-btn" id="btnNext" type="button" aria-label="Diapositiva siguiente" title="Siguiente (→)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <div class="hint" aria-hidden="true">
+        <kbd>←</kbd> <kbd>→</kbd> navegar · <kbd>I</kbd> índice · <kbd>F</kbd> pantalla · <kbd>P</kbd> imprimir
+      </div>
+    </footer>
+  </div>
+
+  <div class="overlay" id="indexOverlay" role="dialog" aria-modal="true" aria-labelledby="indexTitle" hidden>
+    <div class="overlay-card">
+      <div class="overlay-head">
+        <div>
+          <h2 id="indexTitle">Índice de la presentación</h2>
+          <p id="indexMeta">16 diapositivas</p>
+        </div>
+        <button class="notes-close" id="btnCloseIndex" type="button" aria-label="Cerrar índice">×</button>
+      </div>
+      <div class="overlay-body">
+        <div class="index-grid" id="indexGrid"></div>
+      </div>
+      <div class="overlay-foot">
+        <span>Selecciona una diapositiva · <kbd>Esc</kbd> para cerrar</span>
+        <a id="indexAnnexLink" href="anexos.html">Abrir anexos A–G →</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="sr-only" id="liveRegion" role="status" aria-live="polite"></p>
+
+  <script src="assets/js/slides.js"></script>
+  <script src="assets/data/evidencia.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
